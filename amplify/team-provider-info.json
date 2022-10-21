@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify9331c65eb9aa4-staging-145843-authRole",
+      "UnauthRoleArn": "arn:aws:iam::409376726797:role/amplify-amplify9331c65eb9aa4-staging-145843-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::409376726797:role/amplify-amplify9331c65eb9aa4-staging-145843-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify9331c65eb9aa4-staging-145843-deployment",
+      "UnauthRoleName": "amplify-amplify9331c65eb9aa4-staging-145843-unauthRole",
+      "StackName": "amplify-amplify9331c65eb9aa4-staging-145843",
+      "StackId": "arn:aws:cloudformation:us-east-1:409376726797:stack/amplify-amplify9331c65eb9aa4-staging-145843/db421cd0-5150-11ed-85a9-0e51dd2ef81d",
+      "AmplifyAppId": "d2qdikltfui2hy"
+    },
+    "categories": {
+      "auth": {
+        "springmarketwebappe14677f7": {}
+      }
+    }
+  }
+}
