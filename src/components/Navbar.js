@@ -13,7 +13,7 @@ const Navbar = ({ search, setSearch }) => {
       </span>
       
       <span>
-      <button onClick={() => navigate("/shop")}>Shop</button>
+      <button onClick={() => navigate("/shop")}>Shop for items</button>
         <button onClick={() => navigate("/shopping-cart")}>Shopping Cart</button>
         <button onClick={() => navigate("/checkout")}>Check Out</button>
       </span>
