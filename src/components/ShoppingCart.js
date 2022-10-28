@@ -14,8 +14,8 @@ const ShoppingCart = () => {
   const [itemList, setItemList] = useState([]);
   const [fetchError, setFetchError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const CART_API = "http://192.168.173.117:8080/cart";
-  const ORDER_API = "http://192.168.173.117:8080/order/message";
+  const CART_API = "http://2.tcp.ngrok.io:15856/cart";
+  const ORDER_API = "http://2.tcp.ngrok.io:15856/order/message";
   const navigate = useNavigate();
   const [priceChange, setPriceChange] = useState(0);
   const [giftMessage, setGiftMessage] = useState("");

@@ -10,8 +10,8 @@ const Shop = () => {
   const [cartList, setCartList] = useState([]);
   const [fetchError, setFetchError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const ITEM_API = "http://192.168.173.117:8080/shop"; // json server port: 3500/items, Spring Rest port: 8080/shop
-  const CART_API = "http://192.168.173.117:8080/cart";
+  const ITEM_API = "http://2.tcp.ngrok.io:15856/shop"; // json server port: 3500/items, Spring Rest port: 8080/shop
+  const CART_API = "http://2.tcp.ngrok.io:15856/cart";
   const [focusedItem, SetFocusedItem] = useState([]);
   const imgSrc = `data:image/png;base64,${focusedItem.image}`;
   const [authToken, setAuthToken] = useState("");
