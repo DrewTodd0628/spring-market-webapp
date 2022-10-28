@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify9331c65eb9aa4-staging-145843-authRole",
+      "UnauthRoleArn": "arn:aws:iam::409376726797:role/amplify-amplify9331c65eb9aa4-staging-145843-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::409376726797:role/amplify-amplify9331c65eb9aa4-staging-145843-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify9331c65eb9aa4-staging-145843-deployment",
+      "UnauthRoleName": "amplify-amplify9331c65eb9aa4-staging-145843-unauthRole",
+      "StackName": "amplify-amplify9331c65eb9aa4-staging-145843",
+      "StackId": "arn:aws:cloudformation:us-east-1:409376726797:stack/amplify-amplify9331c65eb9aa4-staging-145843/db421cd0-5150-11ed-85a9-0e51dd2ef81d",
+      "AmplifyAppId": "d2qdikltfui2hy"
+    }
+  },
+  "auth": {
+    "springmarketwebappe14677f7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify9331c65eb9aa4-staging-145843-deployment/amplify-cfn-templates/auth/springmarketwebappe14677f7-cloudformation-template.json",
+        "logicalId": "authspringmarketwebappe14677f7"
+      },
+      "lastPushTimeStamp": "2022-10-21T17:32:58.610Z",
+      "output": {
+        "UserPoolId": "us-east-1_Em2r5YVPz",
+        "AppClientIDWeb": "16q9975d2sn7drk008iklgj2ln",
+        "AppClientID": "13dmttqoulqgt23mphr87vu854",
+        "IdentityPoolId": "us-east-1:1b44e3e3-6305-40b3-b148-5223819ab6cd",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:409376726797:userpool/us-east-1_Em2r5YVPz",
+        "IdentityPoolName": "springmarketwebappe14677f7_identitypool_e14677f7__staging",
+        "UserPoolName": "springmarketwebappe14677f7_userpool_e14677f7"
+      },
+      "lastPushDirHash": "/WSCa8ghgSUJD/RldgABVsKIgHE="
+    }
+  }
+}
