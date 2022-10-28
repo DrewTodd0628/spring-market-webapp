@@ -19,28 +19,15 @@ import {
 
 function App({ signOut }) {
   return (
-    <View className="App">
-      <Card>
-        <Heading level={1}>We now have Auth!</Heading>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
+    <Routes>
+      <Route path="/" element={<Layout signOut={signOut}/>}>
+        <Route index path="/" element={<Shop/>}/>
+        <Route index path="/shop" element={<Shop/>}/>
+        <Route index path="/shopping-cart" element={<ShoppingCart/>}/>
+        <Route index path="/checkout" element={<CheckOut/>}/>
+      </Route>
+    </Routes>
   );
 }
 
 export default withAuthenticator(App);
-
-// function App() {
-//   return (
-//     <Routes>
-//       <Route path="/" element={<Layout/>}>
-//         <Route index path="/" element={<Shop/>}/>
-//         <Route index path="/shop" element={<Shop/>}/>
-//         <Route index path="/shopping-cart" element={<ShoppingCart/>}/>
-//         <Route index path="/checkout" element={<CheckOut/>}/>
-//       </Route>
-//     </Routes>
-//   );
-// }
-
-// export default App;

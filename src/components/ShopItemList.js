@@ -1,7 +1,9 @@
 import React from 'react'
 import ShopItem from './ShopItem'
 
-const ShopItemList = ({ items, addToCart, focusItem, isInCart, search, isLoading }) => {
+const ShopItemList = ({ items, addToCart, updateCount, focusItem, isInCart, search, isLoading, cartList }) => {
+  const ccc = cartList.filter(cItem => cItem.itemID === 2);
+  const bbb = items.filter(cItem => cItem.id === 1);
 
   return (
     <>
@@ -10,7 +12,9 @@ const ShopItemList = ({ items, addToCart, focusItem, isInCart, search, isLoading
               <ShopItem
                 key={item.id}
                 item={item}
+                cartItem={cartList.filter(cItem => cItem.itemID === item.id)}
                 addToCart={addToCart}
+                updateCount={updateCount}
                 focusItem={focusItem}
                 checked={isInCart(item.id)}
               />

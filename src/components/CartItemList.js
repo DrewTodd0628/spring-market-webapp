@@ -1,7 +1,7 @@
 import React from 'react'
 import CartItem from './CartItem'
 
-const CartItemList = ({ items, deleteItem, search, isLoading }) => {
+const CartItemList = ({ items, deleteItem, updateCount, search, isLoading, costSum, setCostSum }) => {
   return (
     <>
         {items.length  + isLoading ? (
@@ -10,6 +10,9 @@ const CartItemList = ({ items, deleteItem, search, isLoading }) => {
                 key={item.id}
                 item={item}
                 deleteItem={deleteItem}
+                updateCount={updateCount}
+                costSum={costSum}
+                setCostSum={setCostSum}
               />
             ))
         ) : ( search ? (
